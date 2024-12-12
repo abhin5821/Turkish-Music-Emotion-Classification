@@ -59,13 +59,13 @@ Here are the results from various other classifiere:
 
 2. Trained Random Forest Classifier with best hyper-parameter tuining using RandomisedSearchCV
 
-  Random Forest Algorithm trained with hyper-parameter tuining   gave lesser F1-score compared to Simple RF.
+  >Random Forest Algorithm trained with hyper-parameter tuining   gave lesser F1-score compared to Simple RF.
   
   <img width="683" alt="Screenshot 2024-12-12 at 23 37 00" src="https://github.com/user-attachments/assets/3af02212-7c07-4219-8255-28594189118d" />
 
 3. Training using Stacking Classifiers.
    
-  <img width="534" alt="Screenshot 2024-12-12 at 23 39 10" src="https://github.com/user-      attachments/assets/46b72df4-a0ee-46cd-80f1-fa2039477a51" />
+  <img width="534" alt="Screenshot 2024-12-12 at 23 39 10" src="https://github.com/user-attachments/assets/46b72df4-a0ee-46cd-80f1-fa2039477a51" />
  
 4. Training with base and ensemble classifiers without feature selection.
   
