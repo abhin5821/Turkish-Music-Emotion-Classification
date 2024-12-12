@@ -41,10 +41,31 @@ After selecting the optimum number of features from training dataset, the same n
 ### 3. Model Selection & Training.
 In this Model selection and training process, the reduced dataset from previous step is given to multiple classifiers including base classifiers, ensemble classifers & Stacking Classifiers. Out of all the classifiers, `RandomForestClassifer` achieved the highest accuracy of 0.8462 and F1-Score (Macro) of 0.8478.
 
+Results: 
+
+<img width="673" alt="Screenshot 2024-12-12 at 23 06 01" src="https://github.com/user-attachments/assets/3d7e7529-60d9-41c2-9fd9-fee074987f8e" />
 
 Confusion Matrix: 
 
 ![16be4417-93c6-4761-9f49-b51b7f6bbb51](https://github.com/user-attachments/assets/799b35d8-0fcb-4582-bd84-f643d02a6d03)
+
+### 4. Evaluation and Results
+For Evaluation of the model, I have used Accuracy & F1-Score (Macro) as the main metric. As per the problem statement, all the classes have equal priority as this is Music Emotion Classification unlike Heart-disease, cancer dataset etc.. Other metrics include Precision-Macro & Recall-Macro. Using macro is evident that the average value is enough to justify the model's performance rather than that of individual classes'.
+
+Here are the results from various other classifiere:
+1. Training with base and ensemble classifiers without feature selection.
+
+
+### 5. Conclusions
+The given dataset, [Acoustic_Features](Acoustic_Features.csv), based on its nature and number of features, we have applied feature engineering techniques: Mutual Information with Sequential Forward Selection(MISFS), finally given the extracted features to RandomForestClassifier, which performed best among all other classifiers with an accuracy of **84.62%** and F1-Score of **84.78%**.
+
+### References
+1. https://www.kaggle.com/code/nkitgupta/evaluation-metrics-for-multi-class-classification
+2.https://www.mdpi.com/2079-9292/12/10/2290#sec3-electronics-12-02290
+3.https://www.kaggle.com/code/nkitgupta/evaluation-metrics-for-multi-class-classification
+4.https://www.evidentlyai.com/classification-metrics/multi-class-metrics
+5.https://scikit-learn.org/stable/modules/preprocessing.html
+6.https://medium.com/@vinodkumargr/07-standardization-and-normalization-techniques-in-machine-learning-standardscaler-3890a89bddbf.
 
 
 
