@@ -27,16 +27,24 @@ After capping outliers, some of the features became close to normal distribution
 Feature Scaling brings all the features to one scale. I have applied `StandardScaler` from `scikit-learn` as the features were normal.
 
 #### 2.2 Mutual Information with Sequential Forward Selection(MISFS)
-Feature Selection is crucial so as to reduce the dimensionality of the dataset and also to select relevent features to enhance the model's performance. This method is divided in two phases:
+Feature Selection is crucial so as to reduce the dimensionality of the dataset and also to select relevent features to enhance the model's performance. Before selecting the optimum number of features, the dataset has been split into train and test with a ratio of 70:30 using `train-test-split` from `scikit-learn`. The feature engineering is applied only on train dataset. This method is divided in two phases:
 - Phase 1: Mutual Information(Filter method)
   
 This phase involves computing the importance of the feature to the target variable and arranging them in the decreasing order. Based on trail and error method, 47 features have been selected based on their imporatnce with target and among themselves. `mutual_info_classif` from `scikit-learn` is used to do the same.
 
 * Phase 2: Sequential Forward Selection (Wrapper Method)
 
-This phase involves Selecting the optimum features that gives the best accuracy. This method begins by selecting a single feature to train and predict against target variable, followed by pair, three and so on, until the optimum group of features gives the best performance. The scoring is based on accuracy of the group of features. `SequentialFeatureSelector` from `scikit-learn` and `KNeighborsClassifier` have been used.
+This phase involves Selecting the optimum features that gives the best accuracy. This method begins by selecting a single feature to train and predict against target variable, followed by pair, three and so on, until the optimum group of features gives the best performance. The scoring is based on accuracy of the group of features. Out of 50 features, 23 optimum features were selected. `SequentialFeatureSelector` from `scikit-learn` and `KNeighborsClassifier` have been used.
+
+After selecting the optimum number of features from training dataset, the same number of features are selected from test dataset and they are given to the multiple classifiers.
+
+### 3. Model Selection & Training.
+In this Model selection and training process, the reduced dataset from previous step is given to multiple classifiers including base classifiers, ensemble classifers & Stacking Classifiers. Out of all the classifiers, `RandomForestClassifer` achieved the highest accuracy of 0.8462 and F1-Score (Macro) of 0.8478.
 
 
+Confusion Matrix: 
+
+![16be4417-93c6-4761-9f49-b51b7f6bbb51](https://github.com/user-attachments/assets/799b35d8-0fcb-4582-bd84-f643d02a6d03)
 
 
 
