@@ -54,6 +54,8 @@ For Evaluation of the model, I have used Accuracy & F1-Score (Macro) as the main
 
 Here are the results from various other classifiere:
 1. Training with base and ensemble classifiers without feature selection.
+[result_df.xlsx](https://github.com/user-attachments/files/18115672/result_df.xlsx)
+
 
 
 ### 5. Conclusions
@@ -61,11 +63,11 @@ The given dataset, [Acoustic_Features](Acoustic_Features.csv), based on its natu
 
 ### References
 1. https://www.kaggle.com/code/nkitgupta/evaluation-metrics-for-multi-class-classification
-2.https://www.mdpi.com/2079-9292/12/10/2290#sec3-electronics-12-02290
-3.https://www.kaggle.com/code/nkitgupta/evaluation-metrics-for-multi-class-classification
-4.https://www.evidentlyai.com/classification-metrics/multi-class-metrics
-5.https://scikit-learn.org/stable/modules/preprocessing.html
-6.https://medium.com/@vinodkumargr/07-standardization-and-normalization-techniques-in-machine-learning-standardscaler-3890a89bddbf.
+2. https://www.mdpi.com/2079-9292/12/10/2290#sec3-electronics-12-02290
+3. https://www.kaggle.com/code/nkitgupta/evaluation-metrics-for-multi-class-classification
+4. https://www.evidentlyai.com/classification-metrics/multi-class-metrics
+5. https://scikit-learn.org/stable/modules/preprocessing.html
+6. https://medium.com/@vinodkumargr/07-standardization-and-normalization-techniques-in-machine-learning-standardscaler-3890a89bddbf.
 
 
 
