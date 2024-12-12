@@ -43,19 +43,33 @@ In this Model selection and training process, the reduced dataset from previous 
 
 Results: 
 
-<img width="673" alt="Screenshot 2024-12-12 at 23 06 01" src="https://github.com/user-attachments/assets/3d7e7529-60d9-41c2-9fd9-fee074987f8e" />
+  <img width="673" alt="Screenshot 2024-12-12 at 23 06 01" src="https://github.com/user-attachments/assets/3d7e7529-60d9-41c2-9fd9-fee074987f8e" />
 
 Confusion Matrix: 
 
-![16be4417-93c6-4761-9f49-b51b7f6bbb51](https://github.com/user-attachments/assets/799b35d8-0fcb-4582-bd84-f643d02a6d03)
+  ![16be4417-93c6-4761-9f49-b51b7f6bbb51](https://github.com/user-attachments/assets/799b35d8-0fcb-4582-bd84-f643d02a6d03)
 
 ### 4. Evaluation and Results
 For Evaluation of the model, I have used Accuracy & F1-Score (Macro) as the main metric. As per the problem statement, all the classes have equal priority as this is Music Emotion Classification unlike Heart-disease, cancer dataset etc.. Other metrics include Precision-Macro & Recall-Macro. Using macro is evident that the average value is enough to justify the model's performance rather than that of individual classes'.
 
 Here are the results from various other classifiere:
-1. Training with base and ensemble classifiers without feature selection.
-[result_df.xlsx](https://github.com/user-attachments/files/18115672/result_df.xlsx)
+1. Training with base and ensemble classifiers with feature selection.
 
+  <img width="686" alt="Screenshot 2024-12-12 at 23 31 25" src="https://github.com/user-attachments/assets/2620abbf-cf9f-4a5c-9c6c-97f4bf105785" />
+
+2. Trained Random Forest Classifier with best hyper-parameter tuining using RandomisedSearchCV
+
+  Random Forest Algorithm trained with hyper-parameter tuining   gave lesser F1-score compared to Simple RF.
+  
+  <img width="683" alt="Screenshot 2024-12-12 at 23 37 00" src="https://github.com/user-attachments/assets/3af02212-7c07-4219-8255-28594189118d" />
+
+3. Training using Stacking Classifiers.
+   
+  <img width="534" alt="Screenshot 2024-12-12 at 23 39 10" src="https://github.com/user-      attachments/assets/46b72df4-a0ee-46cd-80f1-fa2039477a51" />
+ 
+4. Training with base and ensemble classifiers without feature selection.
+  
+   <img width="682" alt="Screenshot 2024-12-12 at 23 40 15" src="https://github.com/user-attachments/assets/d111890a-449c-490e-8f8a-5e254186484b" />
 
 
 ### 5. Conclusions
