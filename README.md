@@ -1,12 +1,12 @@
 # **Turkish Music Classification**
 Source : [Turkish-Music-Emotion](https://archive.ics.uci.edu/dataset/862/turkish+music+emotion) |  Main File : [main.ipynb](main.ipynb)
 
-## Objective:
-Classification of verbal and nonverbal music from different genres of Turkish music into 4 discrete classes based on its Emotions,
+## Objective
+Classification of verbal and non-verbal music from different genres of Turkish music into 4 discrete classes based on its Emotions,
 namely: happy, sad, angry, relax.
 
-## Dataset:
-Dataset is created by extracting the intrinstic characteristics such as Mel Frequency Cepstral Coefficients (MFCCs), Tempo, Chromagram, Spectral and Harmonic features of Turkish-Music of various generes. The Dataset consists of 400 instances and 50 Fearures. The target Feature has 4 classes: happy, sad, angry, relax. 
+## Dataset
+Dataset is created by extracting the intrinstic characteristics such as Mel Frequency Cepstral Coefficients (MFCCs), Tempo, Chromagram, Spectral and Harmonic features of Turkish-Music of various genres. The Dataset consists of 400 instances and 50 Fearures. The target Feature has 4 classes: happy, sad, angry, relax. 
 
 Link : [Acoustic_features.csv](Acoustic_Features.csv)
 
@@ -52,7 +52,7 @@ Confusion Matrix:
 ### 4. Evaluation and Results
 For Evaluation of the model, I have used Accuracy & F1-Score (Macro) as the main metric. As per the problem statement, all the classes have equal priority as this is Music Emotion Classification unlike Heart-disease, cancer dataset etc.. Other metrics include Precision-Macro & Recall-Macro. Using macro is evident that the average value is enough to justify the model's performance rather than that of individual classes'.
 
-Here are the results from various other classifiere:
+Here are the results from various other classifiers:
 
 1. Training with base and ensemble classifiers with feature selection.
 
