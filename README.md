@@ -53,13 +53,14 @@ Confusion Matrix:
 For Evaluation of the model, I have used Accuracy & F1-Score (Macro) as the main metric. As per the problem statement, all the classes have equal priority as this is Music Emotion Classification unlike Heart-disease, cancer dataset etc.. Other metrics include Precision-Macro & Recall-Macro. Using macro is evident that the average value is enough to justify the model's performance rather than that of individual classes'.
 
 Here are the results from various other classifiere:
+
 1. Training with base and ensemble classifiers with feature selection.
 
   <img width="686" alt="Screenshot 2024-12-12 at 23 31 25" src="https://github.com/user-attachments/assets/2620abbf-cf9f-4a5c-9c6c-97f4bf105785" />
 
-2. Trained Random Forest Classifier with best hyper-parameter tuining using RandomisedSearchCV
+2. Trained Random Forest Classifier with hyper-parameter tuining using RandomisedSearchCV
 
-  >Random Forest Algorithm trained with hyper-parameter tuining   gave lesser F1-score compared to Simple RF.
+  >Random Forest Algorithm trained with hyper-parameter tuining gave lesser F1-score compared to Simple RF.
   
   <img width="683" alt="Screenshot 2024-12-12 at 23 37 00" src="https://github.com/user-attachments/assets/3af02212-7c07-4219-8255-28594189118d" />
 
@@ -70,7 +71,6 @@ Here are the results from various other classifiere:
 4. Training with base and ensemble classifiers without feature selection.
   
    <img width="682" alt="Screenshot 2024-12-12 at 23 40 15" src="https://github.com/user-attachments/assets/d111890a-449c-490e-8f8a-5e254186484b" />
-
 
 ### 5. Conclusions
 The given dataset, [Acoustic_Features](Acoustic_Features.csv), based on its nature and number of features, we have applied feature engineering techniques: Mutual Information with Sequential Forward Selection(MISFS), finally given the extracted features to RandomForestClassifier, which performed best among all other classifiers with an accuracy of **84.62%** and F1-Score of **84.78%**.
