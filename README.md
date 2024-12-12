@@ -29,7 +29,14 @@ Feature Scaling brings all the features to one scale. I have applied `StandardSc
 #### 2.2 Mutual Information with Sequential Forward Selection(MISFS)
 Feature Selection is crucial so as to reduce the dimensionality of the dataset and also to select relevent features to enhance the model's performance. This method is divided in two phases:
 - Phase 1: Mutual Information(Filter method)
-This phase involves computing the importance of the feature to the target variable and arranging them in the decreasing order. Based on trail and error method, 47 features have been selected based on their imporatnce with target and among themselves.
+  
+This phase involves computing the importance of the feature to the target variable and arranging them in the decreasing order. Based on trail and error method, 47 features have been selected based on their imporatnce with target and among themselves. `mutual_info_classif` from `scikit-learn` is used to do the same.
+
+* Phase 2: Sequential Forward Selection (Wrapper Method)
+
+This phase involves Selecting the optimum features that gives the best accuracy. This method begins by selecting a single feature to train and predict against target variable, followed by pair, three and so on, until the optimum group of features gives the best performance. The scoring is based on accuracy of the group of features. `SequentialFeatureSelector` from `scikit-learn` and `KNeighborsClassifier` have been used.
+
+
 
 
 
