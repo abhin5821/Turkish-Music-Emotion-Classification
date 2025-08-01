@@ -2,7 +2,7 @@
 Source : [Turkish-Music-Emotion](https://archive.ics.uci.edu/dataset/862/turkish+music+emotion) |  Main File : [main.ipynb](main.ipynb)
 
 ## Objective
-Classification of verbal and non-verbal music from different genres of Turkish music into 4 discrete classes based on its Emotions,
+Classification of extracted acoustic features of verbal and non-verbal music from different genres of Turkish music into 4 discrete classes based on its Emotions,
 namely: happy, sad, angry, relax.
 
 ## Dataset
