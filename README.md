@@ -6,7 +6,7 @@ Classification of extracted acoustic features of verbal and non-verbal music fro
 namely: happy, sad, angry, relax.
 
 ## Dataset
-License :
+Licensed under [https://creativecommons.org/licenses/by/4.0/legalcode](Link)
 Dataset is created by extracting the intrinsic characteristics such as Mel Frequency Cepstral Coefficients (MFCCs), Tempo, Chromagram, Spectral and Harmonic features of Turkish-Music of various genres. The Dataset consists of 400 instances and 50 Fearures. The target Feature has 4 classes: happy, sad, angry, relax. 
 
 Link : [Acoustic_features.csv](Acoustic_Features.csv)
