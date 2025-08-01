@@ -1,4 +1,4 @@
-# **Turkish Music Classification**
+# **Turkish Music Acoustics Classification**
 Source : [Turkish-Music-Emotion](https://archive.ics.uci.edu/dataset/862/turkish+music+emotion) |  Main File : [main.ipynb](main.ipynb)
 
 ## Objective
@@ -6,6 +6,7 @@ Classification of extracted acoustic features of verbal and non-verbal music fro
 namely: happy, sad, angry, relax.
 
 ## Dataset
+License :
 Dataset is created by extracting the intrinsic characteristics such as Mel Frequency Cepstral Coefficients (MFCCs), Tempo, Chromagram, Spectral and Harmonic features of Turkish-Music of various genres. The Dataset consists of 400 instances and 50 Fearures. The target Feature has 4 classes: happy, sad, angry, relax. 
 
 Link : [Acoustic_features.csv](Acoustic_Features.csv)
